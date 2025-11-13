@@ -32,12 +32,21 @@ markdown_default = """
 <span class="highlighted-text" style='color:rgb(107, 100, 239)'>Sa2VA</span>
 """
 
+# description = """
+# **Usage** : <br>
+# &ensp;(1) For **Grounded Caption Generation** Interleaved Segmentation, input prompt like: *"Could you provide me with a detailed analysis of this photo? Please output with interleaved segmentation masks for the corresponding parts of the answer."* <br>
+# &ensp;(2) For **Segmentation Output**, input prompt like: *"Can you please segment xxx in the given image"* <br>
+# &ensp;(3) For **Image Captioning** VQA, input prompt like: *"Could you please give me a detailed description of the image?"* <br>
+# &ensp;(4) For **Image Conversation**, input arbitrary text instruction. <br>
+# """
+
 description = """
-**Usage** : <br>
-&ensp;(1) For **Grounded Caption Generation** Interleaved Segmentation, input prompt like: *"Could you provide me with a detailed analysis of this photo? Please output with interleaved segmentation masks for the corresponding parts of the answer."* <br>
-&ensp;(2) For **Segmentation Output**, input prompt like: *"Can you please segment xxx in the given image"* <br>
-&ensp;(3) For **Image Captioning** VQA, input prompt like: *"Could you please give me a detailed description of the image?"* <br>
-&ensp;(4) For **Image Conversation**, input arbitrary text instruction. <br>
+**使用方法** : <br>
+&ensp;(1) **グラウンデッド キャプション生成（インタリーブセグメンテーション）** : 次のようなプロンプトを入力してください。*"この写真を詳しく分析してください。回答に対応する部分について、インタリーブされたセグメンテーションマスクを出力してください。"* <br>
+&ensp;(2) **セグメンテーション出力** : 次のようなプロンプトを入力してください。*"与えられた画像（または動画）からxxxをセグメント化してください"* <br>
+&ensp;(3) **画像・動画キャプション生成（VQA）** : 次のようなプロンプトを入力してください。*"この画像（または動画）を詳しく説明してください。"* <br>
+&ensp;(4) **画像・動画会話** : 任意のテキスト指示を入力してください。 <br>
+&ensp;(5) **フォローアップ質問** : 会話履歴を保持したい場合は「フォローアップ質問」にチェックを入れてください。チェックなしの場合、毎回新しい会話として扱われます（トークン消費を抑制）。画像・動画どちらでも有効です。<br>
 """
 
 ONE_THIRD = 1.0/3.0
